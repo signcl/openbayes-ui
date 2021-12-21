@@ -1,0 +1,19 @@
+{
+  "name": "openbayes-ui",
+  "description": "OpenBayes UI Library",
+  "main": "index.js",
+  "repository": "https://github.com/signcl/openbayes-ui",
+  "author": "Tunghsiao Liu <t@sparanoid.com>",
+  "license": "MPL-2.0",
+  "private": true,
+  "scripts": {
+    "release": "yarn lerna publish",
+    "docsearch-css": "yarn workspace @openbayes/docsearch-css"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
