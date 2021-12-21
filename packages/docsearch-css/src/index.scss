@@ -4,6 +4,7 @@ html,
 html[data-theme="light"],
 html[data-theme="dark"] {
 
+  &,
   .DocSearch {
     --docsearch-primary-color: var(--link-color);
     --docsearch-text-color: var(--text-color);
