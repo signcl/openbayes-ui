@@ -1,5 +1,6 @@
-// Make it works with Docusaurus light/dark theme
+:root,
 html,
+// Make it works with Docusaurus light/dark theme
 html[data-theme="light"],
 html[data-theme="dark"] {
 
@@ -48,6 +49,11 @@ html[data-theme="dark"] {
   > a {
     display: none !important;
   }
+}
+
+// Hide external link icons for console
+.DocSearch-Hit a::after {
+  display: none !important;
 }
 
 :root {
