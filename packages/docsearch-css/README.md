@@ -1,11 +1,27 @@
 # `@openbayes/docsearch-css`
 
-> TODO: description
+Algolia DocSearch CSS for OpenBayes
+
+## Install
+
+```bash
+yarn add @openbayes/docsearch-css
+```
 
 ## Usage
 
-```
-const docsearchCss = require('@openbayes/docsearch-css');
+In React:
 
-// TODO: DEMONSTRATE API
+```jsx
+import '@openbayes/docsearch-css';
 ```
+
+In Sass with Webpack:
+
+```scss
+@import "~@openbayes/docsearch-css";
+```
+
+## License
+
+MPL-2.0
