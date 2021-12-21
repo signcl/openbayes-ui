@@ -11,7 +11,7 @@
   "author": "OpenBayes <devops@openbayes.com>",
   "homepage": "https://openbayes.com/",
   "license": "MPL-2.0",
-  "main": "dist/style.css",
+  "main": "dist/index.css",
   "files": [
     "dist"
   ],
