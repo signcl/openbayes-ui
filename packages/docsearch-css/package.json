@@ -1,0 +1,41 @@
+{
+  "name": "@openbayes/docsearch-css",
+  "version": "1.0.0",
+  "description": "Algolia DocSearch CSS for OpenBayes",
+  "keywords": [
+    "algolia",
+    "docsearch",
+    "css",
+    "openbayes"
+  ],
+  "author": "OpenBayes <devops@openbayes.com>",
+  "homepage": "https://openbayes.com/",
+  "license": "MPL-2.0",
+  "main": "dist/style.css",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signcl/openbayes-ui.git"
+  },
+  "scripts": {
+    "test": "npm-run-all --parallel build",
+    "build": "npm-run-all --parallel build:*",
+    "build:sass": "sass src/:dist/ --no-source-map",
+    "serve:css": "nodemon --watch src/ --ext scss --exec \"npm-run-all build:sass\"",
+    "serve": "npm-run-all --parallel serve:*"
+  },
+  "bugs": {
+    "url": "https://github.com/signcl/openbayes-ui/issues"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.45.1"
+  }
+}
