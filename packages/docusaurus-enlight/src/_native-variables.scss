@@ -1,0 +1,181 @@
+:root {
+  /* kladenets customs */
+  --fontstack-prefix: ""; // left empty for user customizations
+  --fontstack-sans-serif: "Helvetica Neue", "PingFang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+  --fontstack-serif: Georgia, serif;
+  /* "PingFang", "MS Yahei", "WQY" for monospace is used for Prince PDF generation in docs */
+  --fontstack-monospace: Menlo, Consolas, "PingFang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", monospace;
+  --fontstack-default: var(--fontstack-prefix) var(--fontstack-sans-serif);
+
+  // Custom varaibles
+  --border-color: var(--text-color-10);
+  --box-shadow: 0 0 0 1px var(--text-color-10), 0 40px 80px -20px var(--text-color-10), 0 30px 50px -35px var(--text-color-20);
+
+  /* darker green color */
+  --green-l: 45%;
+
+  // Global custom vars for components
+  --section-dark-bg-color: #141519; // picked from screencast video
+  --section-dark-stripe-bg-color: var(--link-color);
+
+  // Custom layout helper
+  --col-2: auto / repeat(2, 1fr);
+  --col-2-md: var(--col-2);
+  --col-2-lg: var(--col-2);
+  --col-3: auto / repeat(3, 1fr);
+  --col-3-md: var(--col-3);
+  --col-3-lg: var(--col-3);
+  --col-4: auto / repeat(4, 1fr);
+  --col-4-md: var(--col-4);
+  --col-4-lg: var(--col-4);
+  --col-2fr-1fr: auto / 2fr 1fr;
+  --col-30p-1fr: auto / 30% 1fr;
+  --order-push-md: -1;
+  --gap-lg: 150px;
+  --gap-md: 100px;
+  --gap-sm: 50px;
+  --gap-xs: 20px;
+
+  @media (max-width: $breakpoint-lg) {
+    --col-4-md: auto / repeat(2, 1fr);
+    --col-3-md: auto / repeat(2, 1fr);
+    --col-2-lg: auto;
+    --col-2fr-1fr: auto;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    --col-2-md: auto;
+    --col-3-md: auto;
+    --col-30p-1fr: auto;
+    --order-push-md: unset;
+  }
+
+  /* You can override the default Infima variables here. */
+  --ifm-color-primary: var(--link-color);
+
+  --ifm-alert-color: var(--text-color);
+  --ifm-color-secondary: var(--text-color-10);
+  --ifm-color-secondary-dark: var(--text-color-20);
+  --ifm-color-success: var(--green-15);
+  --ifm-color-success-dark: var(--green-20);
+  --ifm-color-info: var(--blue-15);
+  --ifm-color-info-dark: var(--blue-20);
+  --ifm-color-warning: var(--orange-15);
+  --ifm-color-warning-dark: var(--orange-20);
+  --ifm-color-danger: var(--red-15);
+  --ifm-color-danger-dark: var(--red-20);
+
+  --ifm-color-gray-100: var(--text-color-10);
+  --ifm-color-gray-200: var(--text-color-20);
+  --ifm-color-gray-300: var(--text-color-30);
+  --ifm-color-gray-400: var(--text-color-40);
+  --ifm-color-gray-500: var(--text-color-50);
+  --ifm-color-gray-600: var(--text-color-60);
+  --ifm-color-gray-700: var(--text-color-70);
+  --ifm-color-gray-800: var(--text-color-80);
+  --ifm-color-gray-900: var(--text-color-90);
+
+  --ifm-code-font-size: 100%;
+}
+
+html[data-theme="dark"] {
+  // Basis
+  --blue-l: 70%;
+  --indigo-l: 71%;
+  --deeppurple-l: 77%;
+  --purple-l: 80%;
+  --pink-l: 83%;
+  --red-l: 70%;
+  --deep-orange-l: 70%;
+  --orange-l: 70%;
+  --amber-l: 76%;
+  --yellow-l: 80%;
+  --lime-l: 66%;
+  --light-green-l: 65%;
+  --green-l: 70%;
+  --teal-l: 75%;
+  --cyan-l: 80%;
+  --light-blue-l: 80%;
+
+  --text-color-h: 213;
+  --text-color-s: 32%;
+  --text-color-l: 96%;
+
+  --link-color-h: 202;
+  --link-color-s: 100%;
+  --link-color-l: 60%;
+
+  --bg-color-h: 220;
+  --bg-color-s: 10%;
+  --bg-color-l: 12%;
+
+  --code-color-s: calc(var(--link-color-s) * .95);
+  --code-color-l: calc(var(--link-color-l) * 1.25);
+
+  --section-dark-bg-color: var(--white);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: var(--text-color-10);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: var(--text-color-10);
+}
+
+/* openbayes custom */
+html,
+html[data-theme="light"],
+html[data-theme="dark"] {
+  /* https://github.com/facebookincubator/infima/blob/master/packages/core/styles/common/dark-mode.pcss */
+  --ifm-background-surface-color: var(--bg-color);
+  --ifm-navbar-link-color: var(--text-color);
+  --ifm-navbar-shadow: 0 1px 0 0 var(--text-color-10);
+  --ifm-navbar-item-padding-horizontal: 1rem;
+
+  --ifm-font-color-base: var(--text-color);
+  --ifm-font-family-base: var(--fontstack-default);
+  --ifm-font-family-monospace: var(--fontstack-monospace);
+
+  --ifm-blockquote-color: var(--text-color-60);
+
+  --ifm-hover-overlay: var(--link-color-5);
+
+  --ifm-color-black: var(--text-color);
+  --ifm-color-content-secondary: var(--text-color-60);
+
+  --ifm-hr-border-color: var(--text-color-10);
+
+  --ifm-menu-color: var(--text-color);
+  --ifm-dropdown-link-color: var(--text-color);
+  --ifm-dropdown-background-color: var(--bg-color-light);
+
+  --ifm-toc-border-color: var(--text-color-10);
+
+  --ifm-pre-background: var(--text-color-3);
+  --ifm-pre-color: var(--code-color);
+  --ifm-code-background: transparent;
+
+  --ifm-table-border-color: var(--text-color-10);
+  --ifm-table-stripe-background: var(--text-color-5);
+
+  --ifm-scrollbar-track-background-color: transparent;
+  --ifm-scrollbar-thumb-background-color: var(--text-color-5);
+  --ifm-scrollbar-thumb-hover-background-color: var(--text-color-20);
+
+  --ifm-global-shadow-lw: none;
+
+  --ifm-footer-link-color: var(--text-color-60);
+  --ifm-footer-background-color: transparent;
+
+  --ifm-badge-background-color: transparent;
+  --ifm-badge-color: var(--link-color);
+  --ifm-badge-border-color: currentColor;
+  --ifm-badge-border-radius: 4px;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}

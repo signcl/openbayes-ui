@@ -1,7 +1,7 @@
 {
   "name": "@openbayes/docsearch-css",
   "version": "1.1.3",
-  "description": "Algolia DocSearch CSS for OpenBayes",
+  "description": "Algolia DocSearch CSS powered by Kladenets color system for OpenBayes",
   "keywords": [
     "algolia",
     "docsearch",

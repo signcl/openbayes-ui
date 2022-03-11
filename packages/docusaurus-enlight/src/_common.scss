@@ -1,0 +1,843 @@
+body {
+  --doc-sidebar-width: 340px;
+  font-feature-settings: "halt";
+  font-family: var(--fontstack-default);
+  line-height: var(--line-height);
+  width: 100%;
+  min-width: 0;
+}
+
+// SVG typography helps
+svg {
+
+  text {
+    font-family: var(--fontstack-default);
+  }
+
+  // TODO: after compressing these SVG using SVGO. All element IDs are
+  // removed, so I have to add a class manually to apply monospace font style
+  // for codes in the SVG
+  .code-text {
+    font-family: var(--fontstack-monospace);
+  }
+}
+
+code {
+  color: var(--code-color);
+  border: none;
+  padding: 0;
+  vertical-align: inherit;
+}
+
+img {
+  // Improve downscaled images rendering on non-retina displays
+  image-rendering: -webkit-optimize-contrast;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.largetype {
+  /* Force set font family since Prince can't handle nested variables well */
+  font-family: var(--fontstack-prefix) source-han-sans-cjk-sc, var(--fontstack-sans-serif);
+  font-weight: 900;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+.largetype {
+  font-size: 2.25rem;
+
+  span {
+    opacity: .6;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    font-size: 24px;
+
+    &.heading {
+      opacity: .5;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+}
+
+// Bootstrap Buttons
+.btn {
+  --btn-bg-h: var(--link-color-h);
+  --btn-bg-s: var(--link-color-s);
+  --btn-bg-l: var(--link-color-l);
+  --btn-bg-hsl: var(--btn-bg-h), var(--btn-bg-s), var(--btn-bg-l);
+
+  --btn-bg: hsl(var(--btn-bg-hsl));
+  --btn-bg-factor: .9;
+  --btn-bg-light: hsl(var(--btn-bg-h), var(--btn-bg-s), calc(var(--btn-bg-l) / var(--btn-bg-factor)));
+  --btn-bg-dark: hsl(var(--btn-bg-h), var(--btn-bg-s), calc(var(--btn-bg-l) * var(--btn-bg-factor)));
+  --btn-bg-border: hsla(var(--btn-bg-hsl), .4);
+
+  --btn-text: var(--bg-color);
+
+  appearance: none;
+  display: inline-block;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: .3em;
+  border: none;
+  padding: .3em 1em;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    color: var(--btn-text);
+    background-color: var(--btn-bg-light);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: var(--btn-bg-dark);
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 .15em var(--btn-bg-border);
+  }
+
+  &.btn-lg {
+    font-size: 1.25rem;
+  }
+
+  &.btn-xl {
+    font-size: 1.3rem;
+    padding: .4em 1.25em;
+  }
+
+  &.btn-dark {
+    --btn-bg-s: 30%;
+    --btn-bg-h: var(--text-color-h);
+    --btn-bg-l: calc(var(--text-color-l) * 2);
+    --btn-bg-factor: .65;
+  }
+}
+
+// Bootstrap badge
+// NOTE: Infima also uses `.badge` for its badges so some variables are conflicted. Redefine them to resolve this issue.
+.badge {
+  --badge-text-color: var(--link-color);
+  color: var(--badge-text-color);
+  text-transform: uppercase;
+
+  &.badge--primary {
+    --badge-text-color: var(--bg-color);
+  }
+
+  &.badge--secondary {
+    --badge-text-color: var(--text-color);
+  }
+
+  &.badge--success {
+    --badge-text-color: var(--green);
+  }
+
+  &.badge--info {
+    --badge-text-color: var(--blue);
+  }
+
+  &.badge--warning {
+    --badge-text-color: var(--orange);
+  }
+
+  &.badge--danger {
+    --badge-text-color: var(--red);
+  }
+}
+
+// Boostrap position utilities (simplified)
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: block;
+}
+
+@media(min-width: $breakpoint-lg-min) {
+  .mx-lg-auto {
+    margin-right: auto!important;
+    margin-left: auto!important
+  }
+
+  .d-lg-block {
+    display: block !important;
+  }
+
+  .d-lg-none {
+    display: none !important;
+  }
+}
+
+@media(min-width: $breakpoint-md-min) {
+  .mx-md-auto {
+    margin-right: auto!important;
+    margin-left: auto!important
+  }
+}
+
+@media(min-width: $breakpoint-sm-min) {
+  .mx-sm-auto {
+    margin-right: auto!important;
+    margin-left: auto!important
+  }
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.event-link {
+  cursor: pointer;
+}
+
+// General content style. Imported and modified from original AMSF homepage
+.section-content {
+  position: relative;
+
+  a {
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  // header {
+  //   margin-bottom: 2rem;
+
+  //   @media (max-width: $breakpoint-lg) {
+  //     margin-bottom: 0;
+  //   }
+
+  //   h1 {
+  //     font-weight: 900;
+  //     margin-bottom: 2rem;
+
+  //     &.sm {
+  //       font-size: 18px;
+  //     }
+  //   }
+
+  //   h2 {
+  //     position: relative;
+  //     margin-bottom: 2rem;
+  //     color: var(--link-color);
+  //     font-size: 18px;
+  //     font-weight: bold;
+  //     --width: 9px;
+  //     --height: calc(var(--width) * 1.1);
+  //     --offset: 15px;
+
+  //     @media (max-width: $breakpoint-lg) {
+  //       margin-left: calc(var(--offset) + var(--width) / 2);
+  //     }
+
+  //     &::before,
+  //     &::after {
+  //       display: block;
+  //       position: absolute;
+  //       content: "";
+  //       // width: 7px;
+  //       width: var(--width);
+  //       height: var(--height);
+  //       transform: matrix(1, -.3, 0, 1, 0, 0);
+  //       margin-top: calc((1em - var(--height)) / 2);
+  //     }
+
+  //     &::before {
+  //       top: 3px;
+  //       left: calc(0px - var(--offset));
+  //       background: var(--link-color-80);
+  //     }
+
+  //     &::after {
+  //       top: 0;
+  //       left: calc(-4px - var(--offset));
+  //       background: var(--link-color-50);
+  //     }
+  //   }
+  // }
+
+  // TODO: need migration
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+  }
+}
+
+// Style in Markdown for documentation
+.markdown {
+
+  h1 {
+
+    &:first-child {
+      --ifm-h1-font-size: 2.4rem;
+    }
+  }
+
+  video {
+    max-width: 100%;
+  }
+}
+
+.logo-img {
+  max-width: 200px;
+  max-height: 50px;
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: 100%;
+  }
+
+  &.lg {
+    max-width: 300px;
+  }
+}
+
+/* Admonitions */
+.alert {
+  --ifm-code-background: transparent;
+  border: 1px solid;
+}
+
+.alert--secondary {
+  --ifm-alert-background-color: var(--text-color-7);
+}
+
+.alert--success {
+  --ifm-alert-background-color: var(--green-10);
+}
+
+.alert--info {
+  --ifm-alert-background-color: var(--blue-10);
+}
+
+.alert--warning {
+  --ifm-alert-background-color: var(--orange-10);
+}
+
+.alert--danger {
+  --ifm-alert-background-color: var(--red-10);
+}
+
+.alert--secondary, .alert--secondary a { color: var(--text-color); }
+.alert--success, .alert--success a { color: var(--green); }
+.alert--info, .alert--info a { color: var(--blue); }
+.alert--warning, .alert--warning a { color: var(--orange); }
+.alert--danger, .alert--danger a { color: var(--red); }
+
+.alert--secondary .admonition-icon svg { fill: var(--text-color); }
+.alert--success .admonition-icon svg { fill: var(--green); }
+.alert--info .admonition-icon svg { fill: var(--blue); }
+.alert--warning .admonition-icon svg { fill: var(--orange); }
+.alert--danger .admonition-icon svg { fill: var(--red); }
+
+.alert {
+
+  a {
+    font-weight: bold;
+  }
+}
+
+/* ToC styles */
+.table-of-contents {
+  font-size: 1rem;
+}
+
+.table-of-contents__link code {
+  color: var(--code-color-60);
+}
+
+.table-of-contents__link:hover code,
+.table-of-contents__link--active code {
+  color: var(--code-color);
+}
+
+// Remove extra top space with custom non-sticky navbar
+div[class*="tableOfContents"] {
+  top: 1rem;
+}
+
+/* Sidebar menu on small devices, should push to left or overlayed with Crisp widget */
+.menu--responsive .menu__button {
+  right: auto;
+  left: 1em;
+  backdrop-filter: blur(10px);
+}
+
+div[class*="searchLogoColumn"] {
+  display: none !important;
+}
+
+// TODO: You have to use !important to override default styles
+// Ref: https://github.com/facebook/docusaurus/issues/3678
+.search-result-match {
+  color: var(--orange) !important;
+  background: var(--orange-10) !important;
+}
+
+/* Modified date styles */
+/* @docusaurus-theme-classic-lib-next-theme-DocItem-styles-module */
+html div[class*="lastUpdated"] {
+  font-style: normal;
+}
+
+/* Lighter code block title border color */
+/* @docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module */
+html div[class*="codeBlockTitle"] {
+  border-bottom-color: var(--text-color-10);
+}
+
+/* Dark mode toggler */
+html {
+
+  div[class^="toggleButton"] {
+
+    &:hover {
+      background-color: var(--text-color-10);
+    }
+  }
+
+  div[class^="toggle"] {
+
+    &:hover {
+
+      div[class^="toggleTrackThumb"] {
+        box-shadow: none;
+      }
+    }
+
+    &:active:not(div[class^="toggleDisabled"]) {
+
+      div[class^="toggleTrackThumb"] {
+        box-shadow: 0 0 0 3px var(--link-color-40);
+      }
+    }
+  }
+
+  div[class^="toggleTrack_"] {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+  }
+
+  div[class^="toggleTrackThumb"] {
+    background-color: var(--bg-color);
+    border-color: transparent;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+html[data-theme="dark"] {
+
+  div[class^="toggleButton"] {
+
+    &:hover {
+      background-color: var(--text-color-10);
+    }
+  }
+}
+
+// ToC custom border
+div[class^="tocCollapsibleContent"] > ul {
+  border-color: var(--link-color-10);
+}
+
+// Code copy button
+button[class*="copyButton"] {
+  backdrop-filter: blur(5px);
+}
+
+// Playground code blocks
+div[class*="playgroundContainer"] {
+
+  div[class*="playgroundHeader"] {
+    color: var(--text-color);
+    background: var(--text-color-20);
+
+    &:first-of-type {
+      color: var(--white);
+      background: var(--link-color-60);
+    }
+  }
+}
+
+div[class*="playgroundPreview"] {
+  padding: .75rem;
+}
+
+// Rich text links are used outside /docs
+.rich-text {
+  line-height: 1.7;
+
+  a:not(.btn) {
+    white-space: nowrap;
+    background: var(--link-color-10);
+    padding: 2px .8em;
+    border-radius: 100px;
+    font-weight: bold;
+
+    &:not([href^=http])[href*="/docs/"]::before {
+      margin-left: -.1em;
+    }
+  }
+
+  // Borrowed from almace-scaffolding
+  ul,
+  ol {
+    padding-left: 1em;
+    margin-bottom: 1.8rem;
+    list-style: none;
+    counter-reset: list;
+
+    li {
+      line-height: calc(var(--line-height) * 1.2);
+
+      &::before {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        width: 4em;
+        margin-top: 0;
+        margin-left: -4em;
+        text-align: right;
+        opacity: .4;
+        pointer-events: none;
+      }
+
+      > ul,
+      > ol {
+        margin-left: 1em;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  ul li::before {
+    content: "-";
+    padding-right: .5em;
+  }
+
+  ol li::before {
+    counter-increment: list;
+    content: counter(list) ".";
+    padding-right: .25em;
+  }
+}
+
+/* Post-specific styles */
+.runtimes-table table {
+  overflow: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+// Pagination
+.pagination-nav__link {
+  border-color: var(--text-color-20);
+}
+
+.dropdown {
+
+  > .navbar__link {
+
+    // Hide caret for navbar menu link with dropdown
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// Dropdown submenu for desktop
+// NOTE: need regular sync from Docusaurus upstream
+.dropdown--hoverable:hover .dropdown__menu,
+.dropdown--show .dropdown__menu {
+  // This prevent dropdowns flashing when swiching between menus
+  pointer-events: auto;
+}
+
+:root {
+
+  &:not(.scope-index) {
+
+    .dropdown--hoverable {
+
+      &:hover {
+
+        .navbar__link {
+          color: var(--link-color);
+        }
+      }
+    }
+  }
+}
+
+.navbar__link {
+
+  .scope-index & {
+
+    &:hover,
+    &--active {
+      color: var(--text-color);
+    }
+  }
+}
+
+.dropdown__menu {
+  display: grid;
+  gap: .25rem;
+  top: 100%;
+  pointer-events: none;
+  padding: .6rem .5rem;
+
+  .dropdown__link {
+    --title-font-size: 1.1rem;
+    padding: .45rem .8rem;
+    margin-top: 0;
+
+    .inline-svg-wrapper {
+
+      > img,
+      > svg {
+        display: flex;
+        align-items: center;
+        width: var(--icon-size);
+        height: var(--icon-size);
+      }
+    }
+
+    .inline-svg-wrapper {
+      margin-top: calc((var(--icon-size) - var(--title-font-size)));
+    }
+
+    .navbar__link__title {
+      font-size: var(--title-font-size);
+      font-weight: bold;
+    }
+
+    .navbar__link__description {
+      font-weight: normal;
+      color: var(--text-color-50);
+    }
+
+    svg[class*="iconExternalLink"] {
+      opacity: .4;
+    }
+  }
+}
+
+// Blog sections
+a[class*="tagWithCount"] {
+
+  &::before {
+    width: 1.08rem;
+    height: 1.08rem;
+  }
+}
+
+// Remove extra top space with custom non-sticky navbar
+nav[class*="BlogSidebar"] {
+  top: 2rem;
+}
+
+// Logo list
+.logo-img {
+  display: block;
+  max-width: 200px;
+  max-height: 50px;
+
+  .scope-enterprise & {
+    filter: brightness(1.5);
+  }
+}
+
+// Feature grid
+.feature-grid {
+  display: grid;
+  align-content: flex-start;
+  gap: 1em;
+
+  h1 {
+    display: flex;
+    gap: .5em;
+    font-size: 18px;
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+
+.feature-grid-icon {
+  --s: 45px;
+  width: var(--s);
+  height: var(--s);
+
+  // Make color apply to both native SVG import and fontawesome SVG import
+  &,
+  & svg {
+    color: var(--link-color);
+  }
+
+  &.icon-sm {
+    --s: 40px;
+    margin-top: 5px;
+  }
+
+  &.icon-lg {
+    --s: 50px;
+    margin-top: -5px;
+  }
+}
+
+// ToS list
+.tos-list {
+
+  &,
+  ol,
+  ul {
+    position: relative;
+    counter-reset: section; // Creates a new instance of the section counter with each ol element
+    list-style-type: none;
+    -webkit-padding-start: 2em;
+    -moz-padding-start: 2em;
+    padding-start: 2em;
+  }
+
+  @media (min-width: $breakpoint-lg-min) {
+    margin-left: -2em;
+  }
+
+  // First level li need additional space
+  > li {
+    margin-bottom: 1em;
+  }
+
+  // Target all li for general style
+  li {
+
+    &::before {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      width: 4em;
+      margin-top: 0;
+      margin-left: -4em;
+      text-align: right;
+      pointer-events: none;
+    }
+  }
+
+  // Target selected ordered list
+  > li,
+  ol > li {
+    line-height: 2;
+    transition: color .2s ease;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    b {
+      transition: color .2s ease;
+    }
+
+    &::before {
+      padding-right: .25em;
+
+      // Increments only this instance of the section counter
+      counter-increment: section;
+
+      // Adds the value of all instances of the section counter separated by a ".".
+      content: counters(section, ".") " ";
+
+      color: var(--text-color-40);
+      transition: color .2s ease;
+    }
+
+    &:hover {
+      // color: #CB7E67;
+      transition: none;
+
+      > b {
+        color: var(--link-color);
+
+        @for $i from 1 through 26 {
+          &:nth-of-type(#{$i}) {
+            transition-delay: ($i * .04s - .04s);
+          }
+        }
+      }
+
+      &::before {
+        color: var(--link-color);
+        transition: none;
+      }
+    }
+  }
+
+  // Target selected unordered list
+  ul > li {
+
+    &::before {
+      content: "-";
+      padding-right: .5em;
+      opacity: .4;
+    }
+  }
+}
+
+// Breadcrumbs
+html[data-theme="light"],
+html[data-theme="dark"] {
+
+  .breadcrumbs {
+
+    .breadcrumbs__link {
+      font-size: .85rem;
+      background-color: transparent !important;
+      padding: 0;
+    }
+  }
+}
+
+// Press
+.press-logo-preview {
+  max-width: 100%;
+  background: var(--white);
+  border: 1px solid var(--text-color-10);
+  border-radius: 4px;
+  padding: 2em;
+  margin-bottom: 1em;
+
+  &.dark {
+    background: var(--link-color);
+  }
+}
