@@ -9,7 +9,7 @@ If you need to update one of the libraries and see live result in corrsesponding
 ```bash
 $ cd openbayes-ui
 $ yarn docsearch-css link
-yarn link vx.x.x
+...
 success Registered "@openbayes/docsearch-css".
 info You can now run `yarn link "@openbayes/docsearch-css"` in the projects where you want to use this package and it will be used instead.
 ```
