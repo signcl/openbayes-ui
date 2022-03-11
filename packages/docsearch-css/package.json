@@ -1,6 +1,6 @@
 {
   "name": "@openbayes/docsearch-css",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Algolia DocSearch CSS for OpenBayes",
   "keywords": [
     "algolia",
