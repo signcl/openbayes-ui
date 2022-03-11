@@ -1,0 +1,22 @@
+// Note: Aug 26, 2021, 1:58 PM
+// My all-time-favorite reset never disappointed me
+// The additional box-sizing in ::before and ::after can fix
+// custom list style defined in _common.scss while the default reset of Docusaurus
+// only reset it without the psuedo elements
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// NOTE: This is disabled because it does not work with the built-in scrollTo behavior of Docusaurus
+// and `sidebar-scroll-to-active-doc` plugin for pages with hash
+// :root {
+//   scroll-behavior: smooth;
+
+//   @media (prefers-reduced-motion: reduce) {
+//     scroll-behavior: auto;
+//   }
+// }
