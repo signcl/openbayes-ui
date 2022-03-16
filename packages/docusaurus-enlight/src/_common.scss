@@ -112,6 +112,15 @@ h6,
     box-shadow: 0 0 0 .15em var(--btn-bg-border);
   }
 
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: var(--btn-bg);
+    }
+  }
+
   &.btn-lg {
     font-size: 1.25rem;
   }
