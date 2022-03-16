@@ -2,6 +2,12 @@
 
 Docusaurus Enlight'ed by Kladenets color system made for OpenBayes
 
+## Demo
+
+General appearance:
+
+<img width="1606" alt="Demo" src="https://user-images.githubusercontent.com/96356/158654527-65e282b4-a38e-45b9-bef0-aa95d510ea65.png">
+
 ## Install
 
 ```bash
