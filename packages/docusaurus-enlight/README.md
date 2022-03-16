@@ -6,7 +6,11 @@ Docusaurus Enlight'ed by Kladenets color system made for OpenBayes
 
 General appearance:
 
-<img width="1606" alt="Demo" src="https://user-images.githubusercontent.com/96356/158654527-65e282b4-a38e-45b9-bef0-aa95d510ea65.png">
+<img width="1606" alt="Demo" src="https://user-images.githubusercontent.com/96356/158656116-fdb050fe-ad6b-4d7f-b930-c4f41834a91b.png">
+
+Auto dark mode via Kladenets for product pages:
+
+<img width="1606" alt="Dark mode" src="https://user-images.githubusercontent.com/96356/158656169-ab9ce6cd-cc1d-44da-9104-0a9331cec113.png">
 
 ## Install
 
