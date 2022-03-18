@@ -279,7 +279,7 @@ input[type=file] {
   display: block;
   appearance: none;
   border: none;
-  padding-right: 1em;
+  padding: 0.3em 1em;
   font-size: 1rem;
   color: var(--text-color);
   background: var(--text-color-5);
@@ -294,13 +294,22 @@ input[type=file]::-webkit-file-upload-button {
   appearance: none;
   background: var(--link-color);
   color: var(--bg-color);
+  font-size: 1rem;
   border-radius: 0.3em 0 0 0.3em;
   border: none;
   padding: 0.3em 1em;
+  margin: -0.3em -1em;
+  margin-inline-end: 0.75em;
   font-family: inherit;
   font-weight: bold;
   line-height: var(--line-height);
-  margin-right: 1em;
+  cursor: pointer;
+}
+input[type=file]::-webkit-file-upload-button:hover, input[type=file]::-webkit-file-upload-button:focus {
+  background-color: var(--link-color-light);
+}
+input[type=file]::-webkit-file-upload-button:active {
+  background-color: var(--link-color-dark);
 }
 
 .badge {

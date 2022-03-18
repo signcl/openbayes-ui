@@ -144,7 +144,7 @@ input {
     display: block;
     appearance: none;
     border: none;
-    padding-right: 1em;
+    padding: .3em 1em;
     font-size: 1rem;
     color: var(--text-color);
     background: var(--text-color-5);
@@ -162,13 +162,27 @@ input {
       appearance: none;
       background: var(--link-color);
       color: var(--bg-color);
+      // This font-size tweak is necessary for iOS Safari
+      font-size: 1rem;
       border-radius: .3em 0 0 .3em;
       border: none;
+      // Fix iOS Safari input button size bug
       padding: .3em 1em;
+      margin: -.3em -1em;
+      margin-inline-end: .75em;
       font-family: inherit;
       font-weight: bold;
       line-height: var(--line-height);
-      margin-right: 1em;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: var(--link-color-light);
+      }
+
+      &:active {
+        background-color: var(--link-color-dark);
+      }
     }
   }
 }
