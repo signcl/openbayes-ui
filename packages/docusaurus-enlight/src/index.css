@@ -275,6 +275,33 @@ h6,
   --btn-bg-factor: .65;
 }
 
+input[type=file] {
+  display: block;
+  appearance: none;
+  border: none;
+  padding-right: 1em;
+  font-size: 1rem;
+  color: var(--text-color);
+  background: var(--text-color-5);
+  border-radius: 0.3em;
+  transition: box-shadow 0.2s ease;
+}
+input[type=file]:active, input[type=file]:focus {
+  box-shadow: 0 0 0 0.15em var(--link-color-40);
+}
+input[type=file]::-webkit-file-upload-button {
+  appearance: none;
+  background: var(--link-color);
+  color: var(--bg-color);
+  border-radius: 0.3em 0 0 0.3em;
+  border: none;
+  padding: 0.3em 1em;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: var(--line-height);
+  margin-right: 1em;
+}
+
 .badge {
   --badge-text-color: var(--link-color);
   color: var(--badge-text-color);

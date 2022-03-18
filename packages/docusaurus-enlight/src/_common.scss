@@ -138,6 +138,39 @@ h6,
   }
 }
 
+input {
+
+  &[type="file"] {
+    display: block;
+    appearance: none;
+    border: none;
+    padding-right: 1em;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: var(--text-color-5);
+    border-radius: .3em;
+    transition: box-shadow .2s ease;
+
+    &:active,
+    &:focus {
+      box-shadow: 0 0 0 0.15em var(--link-color-40);
+    }
+
+    &::-webkit-file-upload-button {
+      appearance: none;
+      background: var(--link-color);
+      color: var(--bg-color);
+      border-radius: .3em 0 0 .3em;
+      border: none;
+      padding: .3em 1em;
+      font-family: inherit;
+      font-weight: bold;
+      line-height: var(--line-height);
+      margin-right: 1em;
+    }
+  }
+}
+
 // Bootstrap badge
 // NOTE: Infima also uses `.badge` for its badges so some variables are conflicted. Redefine them to resolve this issue.
 .badge {
