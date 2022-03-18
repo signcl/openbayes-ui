@@ -543,7 +543,10 @@ div[class*="playgroundPreview"] {
   line-height: 1.7;
 
   a:not(.btn) {
-    white-space: nowrap;
+    // TODO: This works fien for desktop and make links with icon look nicer.
+    // But it may cause unwanted horizontal scroll on iOS Safari
+    // Date: Mar 18, 2022, 5:01 AM
+    // white-space: nowrap;
     background: var(--link-color-10);
     padding: 2px .8em;
     border-radius: 100px;
