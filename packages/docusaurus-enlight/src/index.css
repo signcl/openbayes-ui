@@ -581,7 +581,6 @@ div[class*=playgroundPreview] {
   line-height: 1.7;
 }
 .rich-text a:not(.btn) {
-  white-space: nowrap;
   background: var(--link-color-10);
   padding: 2px 0.8em;
   border-radius: 100px;
