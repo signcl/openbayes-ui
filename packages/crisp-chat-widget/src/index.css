@@ -1,0 +1,109 @@
+body .crisp-client .cc-kv6t .cc-1ada,
+body .crisp-client .cc-kv6t .cc-ew5j:before,
+body .crisp-client .cc-kv6t .cc-ew5j:after {
+  background-color: var(--link-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-16jc {
+  background-color: var(--link-color-darker) !important;
+}
+body .crisp-client .cc-kv6t[data-last-operator-face=false] .cc-1xry .cc-unoo .cc-7doi .cc-1iv2 .cc-15mo[data-is-ongoing=false] {
+  mask-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjMwIiB3aWR0aD0iMzUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxmaWx0ZXIgaWQ9ImEiIGhlaWdodD0iMTM4LjclIiB3aWR0aD0iMTMxLjQlIiB4PSItMTUuNyUiIHk9Ii0xNS4xJSI+PGZlTW9ycGhvbG9neSBpbj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJkaWxhdGUiIHJhZGl1cz0iMSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiLz48ZmVPZmZzZXQgZHk9IjEiIGluPSJzaGFkb3dTcHJlYWRPdXRlcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+PGZlR2F1c3NpYW5CbHVyIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSIgc3RkRGV2aWF0aW9uPSIxIi8+PGZlQ29tcG9zaXRlIGluPSJzaGFkb3dCbHVyT3V0ZXIxIiBpbjI9IlNvdXJjZUFscGhhIiBvcGVyYXRvcj0ib3V0IiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiLz48ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjA3IDAiLz48L2ZpbHRlcj48cGF0aCBpZD0iYiIgZD0iTTE0LjIzIDIwLjQ2bC05LjY1IDEuMUwzIDUuMTIgMzAuMDcgMmwxLjU4IDE2LjQ2LTkuMzcgMS4wNy0zLjUgNS43Mi00LjU1LTQuOHoiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz48dXNlIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIiB4bGluazpocmVmPSIjYiIvPjwvZz48L3N2Zz4=) !important;
+  mask-size: contain !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  background: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v {
+  background: var(--bg-color) !important;
+  border-radius: 4px !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz {
+  background: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-g7iw {
+  background-color: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t input,
+body .crisp-client .cc-kv6t textarea {
+  color: var(--text-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-2n8m::placeholder {
+  color: var(--text-color-50) !important;
+}
+body .crisp-client .cc-kv6t .cc-vuur, body .crisp-client .cc-kv6t .cc-7rgf[data-active=true] {
+  background: var(--link-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-vuur:hover, body .crisp-client .cc-kv6t .cc-7rgf[data-active=true]:active {
+  background: var(--link-color-darker) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-g7iw .cc-1cxr .cc-t0eq .cc-13gu .cc-br7s .cc-hf7r {
+  mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTEzIDdMLjUgMGwyIDYgNy43IDEtNy44IDEtMS45IDZ6Ii8+PC9zdmc+) !important;
+  mask-size: contain !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  background: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1qlo .cc-1pql .cc-16yo .cc-1ipv .cc-tdrg::placeholder {
+  color: var(--text-color) !important;
+  -webkit-text-fill-color: var(--text-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-vcjp .cc-5ftt[data-type=gif] .cc-r00v .cc-z5zp[data-action=search] .cc-19m8::placeholder {
+  color: var(--text-color) !important;
+  -webkit-text-fill-color: var(--text-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1aev,
+body .crisp-client .cc-kv6t .cc-2hzo:hover,
+body .crisp-client .cc-kv6t .cc-18sf:before,
+body .crisp-client .cc-kv6t .cc-18sf:after {
+  border-color: var(--link-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-2ydi {
+  border-color: var(--text-color-10) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1pvj .cc-1v5j {
+  background-image: linear-gradient(-180deg, var(--bg-color) 85%, var(--bg-color-dark) 100%) !important;
+}
+body .crisp-client .cc-kv6t .cc-1oxy.cc-11vl[data-variant=inactive] .cc-7ebe .cc-kpmf:after,
+body .crisp-client .cc-kv6t .cc-1oxy.cc-11vl[data-variant=active] .cc-7ebe .cc-nqfv:after,
+body .crisp-client .cc-kv6t .cc-1oxy.cc-11vl[data-variant=active] .cc-7ebe .cc-nqfv:before {
+  background-color: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1oxy.cc-11vl[data-variant=active] .cc-7ebe .cc-kpmf::after,
+body .crisp-client .cc-kv6t .cc-1oxy.cc-11vl[data-variant=active] .cc-7ebe .cc-kpmf::before {
+  border-color: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-ve3u, body .crisp-client .cc-kv6t .cc-1nmg:hover {
+  border-color: var(--text-color-10) !important;
+}
+body .crisp-client .cc-kv6t .cc-6zjc,
+body .crisp-client .cc-kv6t .cc-1mk2:hover {
+  color: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn,
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-5ftt,
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-h39l {
+  background-color: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-gif=true] .cc-5b24 .cc-1tha,
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-smiley=true] .cc-5b24 .cc-1tha {
+  background-color: var(--link-color-20) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-gif=true] .cc-5b24 .cc-1tha .cc-batn .cc-h39l .cc-mxq4[data-type=gif],
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-smiley=true] .cc-5b24 .cc-1tha .cc-batn .cc-h39l .cc-mxq4[data-type=smiley] {
+  color: var(--bg-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-h39l .cc-mxq4 {
+  color: var(--text-color) !important;
+}
+body .crisp-client .cc-kv6t .cc-y6ot, body .crisp-client .cc-kv6t .cc-183m:hover {
+  background-color: var(--link-color-20) !important;
+}
+body .crisp-client .cc-kv6t input[type=text] {
+  background: var(--bg-color-light) !important;
+}
+body .crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-vcjp .cc-5ftt[data-type=gif] .cc-r00v .cc-z5zp[data-action=search] .cc-19m8 {
+  border-color: var(--text-color-10) !important;
+}
+body .crisp-client .cc-kv6t .cc-g73w:hover .cc-199t {
+  background-color: var(--link-color-darker) !important;
+}

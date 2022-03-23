@@ -9,7 +9,8 @@
   "scripts": {
     "release": "yarn lerna publish",
     "docsearch-css": "yarn workspace @openbayes/docsearch-css",
-    "docusaurus-enlight": "yarn workspace @openbayes/docusaurus-enlight"
+    "docusaurus-enlight": "yarn workspace @openbayes/docusaurus-enlight",
+    "crisp-chat-widget": "yarn workspace @openbayes/crisp-chat-widget"
   },
   "workspaces": [
     "packages/*"
