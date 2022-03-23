@@ -4,7 +4,7 @@ Theme-aware Crisp chat widget based on Kladenets color system
 
 ## Demo
 
-![Demo for auto color switching](https://user-images.githubusercontent.com/96356/159696299-213fbfe0-c80c-4a02-9e20-6624e78d4cb1.gif)
+https://user-images.githubusercontent.com/96356/159698418-35d50563-86ec-48fe-b766-2d5de5614c6b.mp4
 
 ## Install
 
