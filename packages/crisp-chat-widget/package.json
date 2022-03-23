@@ -1,0 +1,39 @@
+{
+  "name": "@openbayes/crisp-chat-widget",
+  "version": "1.2.2",
+  "description": "Theme-aware Crisp chat widget based on Kladenets color system",
+  "keywords": [
+    "crisp",
+    "css",
+    "openbayes"
+  ],
+  "author": "Tunghsiao Liu <t@sparanoid.com>",
+  "homepage": "https://openbayes.com/",
+  "license": "MPL-2.0",
+  "main": "src/index.css",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signcl/openbayes-ui.git"
+  },
+  "scripts": {
+    "test": "npm-run-all --parallel build",
+    "build": "npm-run-all --parallel build:*",
+    "build:sass": "sass src/:src/ --no-source-map",
+    "serve:css": "nodemon --watch src/ --ext scss --exec \"npm-run-all build:sass\"",
+    "serve": "npm-run-all --parallel serve:*"
+  },
+  "bugs": {
+    "url": "https://github.com/signcl/openbayes-ui/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.9"
+  }
+}
