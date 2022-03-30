@@ -530,12 +530,32 @@ div[class^="tocCollapsibleContent"] > ul {
 }
 
 // Code copy button
-button[class*="copyButton"] {
-  backdrop-filter: blur(5px);
+.theme-code-block {
+
+  &:hover {
+
+    button[class*="copyButton"] {
+
+      // Original Docusaurus uses opacity to change transparency.
+      // Let's stick to HSLA color
+      &:not([class*="copyButtonCopied"]) {
+        opacity: 1;
+      }
+    }
+  }
 }
 
-svg[class*="copyButtonIcon"] {
-  fill: var(--text-color);
+button[class*="copyButton"] {
+  backdrop-filter: blur(5px);
+  border: none;
+  color: var(--text-color-60);
+  box-shadow: 0 0 0 1px var(--text-color-40);
+  background: var(--bg-color-60);
+
+  &:hover {
+    color: var(--text-color);
+    box-shadow: 0 0 0 1px var(--text-color);
+  }
 }
 
 svg[class*="copyButtonSuccessIcon"] {
