@@ -534,6 +534,14 @@ button[class*="copyButton"] {
   backdrop-filter: blur(5px);
 }
 
+svg[class*="copyButtonIcon"] {
+  fill: var(--text-color);
+}
+
+svg[class*="copyButtonSuccessIcon"] {
+  color: var(--green);
+}
+
 // Playground code blocks
 div[class*="playgroundContainer"] {
 
