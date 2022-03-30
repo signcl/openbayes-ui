@@ -475,7 +475,7 @@ html div[class*="codeBlockTitle"] {
 /* Dark mode toggler */
 html {
 
-  div[class^="toggleButton"] {
+  button[class*="toggleButton"] {
 
     &:hover {
       background-color: var(--text-color-10);
@@ -516,7 +516,7 @@ html {
 
 html[data-theme="dark"] {
 
-  div[class^="toggleButton"] {
+  button[class*="toggleButton"] {
 
     &:hover {
       background-color: var(--text-color-10);
