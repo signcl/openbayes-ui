@@ -14,3 +14,18 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/crisp-chat-widget"
+    schedule:
+      interval: "daily"
+
+- package-ecosystem: "npm"
+    directory: "/docsearch-css"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/docusaurus-enlight"
+    schedule:
+      interval: "daily"
