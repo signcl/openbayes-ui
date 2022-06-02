@@ -539,7 +539,7 @@ html div[class*=codeBlockTitle] {
 }
 
 /* Dark mode toggler */
-html div[class^=toggleButton]:hover {
+html button[class*=toggleButton]:hover {
   background-color: var(--text-color-10);
 }
 html div[class^=toggle]:hover div[class^=toggleTrackThumb] {
@@ -561,7 +561,7 @@ html div[class^=toggleTrackThumb] {
   height: 20px;
 }
 
-html[data-theme=dark] div[class^=toggleButton]:hover {
+html[data-theme=dark] button[class*=toggleButton]:hover {
   background-color: var(--text-color-10);
 }
 
@@ -569,8 +569,24 @@ div[class^=tocCollapsibleContent] > ul {
   border-color: var(--link-color-10);
 }
 
+.theme-code-block:hover button[class*=copyButton]:not([class*=copyButtonCopied]) {
+  opacity: 1;
+}
+
 button[class*=copyButton] {
   backdrop-filter: blur(5px);
+  border: none;
+  color: var(--text-color-60);
+  box-shadow: 0 0 0 1px var(--text-color-40);
+  background: var(--bg-color-60);
+}
+button[class*=copyButton]:hover {
+  color: var(--text-color);
+  box-shadow: 0 0 0 1px var(--text-color);
+}
+
+svg[class*=copyButtonSuccessIcon] {
+  color: var(--green);
 }
 
 div[class*=playgroundContainer] div[class*=playgroundHeader] {
