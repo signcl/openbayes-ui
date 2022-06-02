@@ -23,6 +23,16 @@ $ yarn link @openbayes/docsearch-css
 success Using linked package for "@openbayes/docsearch-css".
 ```
 
+Update dependencies version to match latest development version in `package.json`:
+
+```json
+"dependencies": {
+  "@openbayes/docsearch-css": "^1.2.5"
+}
+```
+
+Run `yarn install` to take effect.
+
 ## License
 
 MPL-2.0
