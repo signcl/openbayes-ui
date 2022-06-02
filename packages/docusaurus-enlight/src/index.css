@@ -494,7 +494,7 @@ input[type=file]::-webkit-file-upload-button:active {
 
 /* ToC styles */
 .table-of-contents {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .table-of-contents__link code {
@@ -506,7 +506,7 @@ input[type=file]::-webkit-file-upload-button:active {
   color: var(--code-color);
 }
 
-div[class*=tableOfContents] {
+nav[class*=navbarHideable] + .main-wrapper div[class*=tableOfContents] {
   top: 1rem;
 }
 

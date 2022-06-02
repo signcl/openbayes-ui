@@ -425,7 +425,7 @@ input {
 
 /* ToC styles */
 .table-of-contents {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .table-of-contents__link code {
@@ -438,7 +438,7 @@ input {
 }
 
 // Remove extra top space with custom non-sticky navbar
-div[class*="tableOfContents"] {
+nav[class*="navbarHideable"] + .main-wrapper div[class*="tableOfContents"] {
   top: 1rem;
 }
 
