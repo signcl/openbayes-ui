@@ -70,7 +70,7 @@ html[data-theme="dark"] {
     &:active,
     &:focus,
     &:hover {
-      background-color: var(--bg-color-20);
+      background-color: var(--text-color-10);
       --docsearch-searchbox-shadow: none;
 
       .DocSearch-Button-Key {
