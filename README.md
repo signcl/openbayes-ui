@@ -19,7 +19,7 @@ Then:
 ```bash
 $ cd ../openbayes-docs
 $ yarn link @openbayes/docsearch-css
-yarn link v0.0.1
+...
 success Using linked package for "@openbayes/docsearch-css".
 ```
 
