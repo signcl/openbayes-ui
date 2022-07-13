@@ -510,6 +510,20 @@ nav[class*=navbarHideable] + .main-wrapper div[class*=tableOfContents] {
   top: 1rem;
 }
 
+.menu__caret::before,
+.menu__link--sublist-caret::after {
+  mask-image: var(--ifm-menu-link-sublist-icon);
+  mask-position: center center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background: currentColor;
+  filter: none;
+}
+
+.menu__link--active + .menu__caret {
+  color: var(--link-color);
+}
+
 /* Sidebar menu on small devices, should push to left or overlayed with Crisp widget */
 .menu--responsive .menu__button {
   right: auto;
@@ -942,6 +956,15 @@ html[data-theme=dark] .breadcrumbs .breadcrumbs__link {
   font-size: 0.85rem;
   background-color: transparent !important;
   padding: 0;
+}
+html[data-theme=light] .breadcrumbs__item:not(:last-child):after,
+html[data-theme=dark] .breadcrumbs__item:not(:last-child):after {
+  mask-image: var(--ifm-breadcrumb-separator);
+  mask-position: center center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background: currentColor;
+  filter: none;
 }
 
 .press-logo-preview {
