@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.9](https://github.com/signcl/openbayes-ui/compare/v1.2.8...v1.2.9) (2022-07-13)
+
+
+### Features
+
+* refine menu arrow appearance ([0f26df7](https://github.com/signcl/openbayes-ui/commit/0f26df732210c7bf2477d8da655a6e756887680d))
+
+
+
+
+
 ## [1.2.8](https://github.com/signcl/openbayes-ui/compare/v1.2.7...v1.2.8) (2022-06-02)
 
 
