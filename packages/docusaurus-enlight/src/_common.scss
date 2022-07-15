@@ -950,6 +950,11 @@ html[data-theme="dark"] {
   }
 }
 
+// Back-to-top button
+.theme-back-to-top-button {
+  background-color: var(--text-color-10) !important;
+}
+
 // Press
 .press-logo-preview {
   max-width: 100%;
