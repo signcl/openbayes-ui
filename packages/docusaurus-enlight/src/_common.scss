@@ -410,11 +410,20 @@ input {
 .alert--warning, .alert--warning a { color: var(--orange); }
 .alert--danger, .alert--danger a { color: var(--red); }
 
-.alert--secondary .admonition-icon svg { fill: var(--text-color); }
-.alert--success .admonition-icon svg { fill: var(--green); }
-.alert--info .admonition-icon svg { fill: var(--blue); }
-.alert--warning .admonition-icon svg { fill: var(--orange); }
-.alert--danger .admonition-icon svg { fill: var(--red); }
+.alert--secondary .admonition-icon svg,
+.alert--secondary span[class*="admonitionIcon"] svg { fill: var(--text-color); }
+
+.alert--success .admonition-icon svg,
+.alert--success span[class*="admonitionIcon"] svg { fill: var(--green); }
+
+.alert--info .admonition-icon svg,
+.alert--info span[class*="admonitionIcon"] svg { fill: var(--blue); }
+
+.alert--warning .admonition-icon svg,
+.alert--warning span[class*="admonitionIcon"] svg { fill: var(--orange); }
+
+.alert--danger .admonition-icon svg,
+.alert--danger span[class*="admonitionIcon"] svg { fill: var(--red); }
 
 .alert {
 
