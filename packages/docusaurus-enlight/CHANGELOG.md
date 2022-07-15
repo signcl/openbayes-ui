@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.10](https://github.com/signcl/openbayes-ui/compare/v1.2.9...v1.2.10) (2022-07-15)
+
+
+### Bug Fixes
+
+* **docusaurus-enlight:** wrong component class for docusaurus 2.0.0-rc.1 or later ([f6f7b2a](https://github.com/signcl/openbayes-ui/commit/f6f7b2a6c0cb72d505f5db2a4fee5debfd08dfb4))
+
+
+### Features
+
+* **docusaurus-enlight:** refine back-to-top button appearance in dark mode ([a14715b](https://github.com/signcl/openbayes-ui/commit/a14715b91fc0c94cdbc48591b71b39d7a93b5fe2))
+
+
+
+
+
 ## [1.2.9](https://github.com/signcl/openbayes-ui/compare/v1.2.8...v1.2.9) (2022-07-13)
 
 
