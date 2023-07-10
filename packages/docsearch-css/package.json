@@ -34,7 +34,7 @@
     "url": "https://github.com/signcl/openbayes-ui/issues"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15",
+    "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.45.1"
   },
