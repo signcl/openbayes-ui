@@ -151,7 +151,7 @@ input {
     border-radius: .3em;
     transition: box-shadow .2s ease;
     // Fix iOS 15 Safari hrotizontal scrollbar bug
-    width: 100%;
+    max-width: 100%;
 
     &:active,
     &:focus {
