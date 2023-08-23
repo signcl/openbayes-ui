@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/signcl/openbayes-ui/compare/v1.2.10...v1.3.0) (2023-08-23)
+
+
+### Features
+
+* update basic style ([360e259](https://github.com/signcl/openbayes-ui/commit/360e259d3fa8a23113544590160b97d33a71c062))
+
+
+
+
+
 ## [1.2.10](https://github.com/signcl/openbayes-ui/compare/v1.2.9...v1.2.10) (2022-07-15)
 
 
