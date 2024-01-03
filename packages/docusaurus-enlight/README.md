@@ -15,7 +15,7 @@ Auto dark mode via Kladenets for product pages:
 ## Install
 
 ```bash
-yarn add @openbayes/docusaurus-enlight kladenets@next
+pnpm add @openbayes/docusaurus-enlight kladenets@next
 ```
 
 ## Usage

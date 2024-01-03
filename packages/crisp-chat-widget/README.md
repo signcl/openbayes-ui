@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/96356/159698418-35d50563-86ec-48fe-b76
 ## Install
 
 ```bash
-yarn add @openbayes/crisp-chat-widget kladenets@next
+pnpm add @openbayes/crisp-chat-widget kladenets@next
 ```
 
 ## Usage

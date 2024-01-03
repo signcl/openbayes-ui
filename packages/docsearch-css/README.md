@@ -15,7 +15,7 @@ Dynamic color scheme:
 ## Install
 
 ```bash
-yarn add @openbayes/docsearch-css kladenets@next
+pnpm add @openbayes/docsearch-css kladenets@next
 ```
 
 ## Usage
