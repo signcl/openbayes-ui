@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/signcl/openbayes-ui/compare/v1.3.0...v1.11.0) (2024-01-03)
+
+
+### Bug Fixes
+
+* deprecated property ([bab45cc](https://github.com/signcl/openbayes-ui/commit/bab45ccbc415f4b3a1c887432259a888533d9152))
+
+
+### Features
+
+* avoid font features ([fca0648](https://github.com/signcl/openbayes-ui/commit/fca0648cf02302315ed1ef9bd1c2b41fa134e1bc))
+* migrate to pnpm ([717b69c](https://github.com/signcl/openbayes-ui/commit/717b69c76a5726cfcfbcf3a922459620a282690d))
+
+
+
+
+
 # [1.3.0](https://github.com/signcl/openbayes-ui/compare/v1.2.10...v1.3.0) (2023-08-23)
 
 
