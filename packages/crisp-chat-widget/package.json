@@ -1,6 +1,6 @@
 {
   "name": "@openbayes/crisp-chat-widget",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "Theme-aware Crisp chat widget based on Kladenets color system",
   "keywords": [
     "crisp",
