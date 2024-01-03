@@ -789,7 +789,7 @@ nav[class*=BlogSidebar] {
   list-style-type: none;
   -webkit-padding-start: 2em;
   -moz-padding-start: 2em;
-  padding-start: 2em;
+  padding-inline-start: 2em;
 }
 @media (min-width: 997px) {
   .tos-list {
