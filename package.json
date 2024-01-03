@@ -16,7 +16,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "7.3.0"
+    "lerna": "8.0.1"
   },
   "packageManager": "pnpm@8.14.0"
 }
