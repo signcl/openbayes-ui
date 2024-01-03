@@ -7,15 +7,15 @@
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
-    "release": "yarn lerna publish",
-    "docsearch-css": "yarn workspace @openbayes/docsearch-css",
-    "docusaurus-enlight": "yarn workspace @openbayes/docusaurus-enlight",
-    "crisp-chat-widget": "yarn workspace @openbayes/crisp-chat-widget"
+    "release": "pnpm lerna publish",
+    "docsearch-css": "pnpm -F @openbayes/docsearch-css",
+    "docusaurus-enlight": "pnpm -F @openbayes/docusaurus-enlight",
+    "crisp-chat-widget": "pnpm -F @openbayes/crisp-chat-widget"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^5.0.0"
+    "lerna": "7.3.0"
   }
 }
