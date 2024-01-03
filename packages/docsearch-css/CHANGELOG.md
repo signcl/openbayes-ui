@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/signcl/openbayes-ui/compare/v1.11.0...v1.11.1) (2024-01-03)
+
+
+### Features
+
+* update readme ([11ab364](https://github.com/signcl/openbayes-ui/commit/11ab364abf49d6b332a8c66013d19a6194cedd5c))
+
+
+
+
+
 # [1.11.0](https://github.com/signcl/openbayes-ui/compare/v1.3.0...v1.11.0) (2024-01-03)
 
 **Note:** Version bump only for package @openbayes/docsearch-css
