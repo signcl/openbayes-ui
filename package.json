@@ -3,7 +3,7 @@
   "description": "OpenBayes UI Library",
   "main": "index.js",
   "repository": "https://github.com/signcl/openbayes-ui",
-  "author": "Tunghsiao Liu <t@sparanoid.com>",
+  "author": "Sparanoid <t@sparanoid.com>",
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
