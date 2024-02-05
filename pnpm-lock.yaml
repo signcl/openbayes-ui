@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       lerna:
-        specifier: 8.0.1
-        version: 8.0.1
+        specifier: 8.1.2
+        version: 8.1.2
 
   packages/crisp-chat-widget:
     dependencies:
@@ -108,8 +108,8 @@ packages:
       '@sinclair/typebox': 0.27.8
     dev: true
 
-  /@lerna/create@8.0.1(typescript@5.3.3):
-    resolution: {integrity: sha512-PDYNUF8Nv5j7DbGvVbizEuYuQbNFZ0+wVOtRPvBQOkC2dMNryi3dJjktEd1QeDX6Wa/JkJWvZ5SMHyr+7H3Rtg==}
+  /@lerna/create@8.1.2(typescript@5.3.3):
+    resolution: {integrity: sha512-GzScCIkAW3tg3+Yn/MKCH9963bzG+zpjGz2NdfYDlYWI7p0f/SH46v1dqpPpYmZ2E/m3JK8HjTNNNL8eIm8/YQ==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@npmcli/run-script': 7.0.2
@@ -2542,12 +2542,12 @@ packages:
     resolution: {integrity: sha512-vMPcVq7JH/w0hZ1bBjycXBfVav6ZT3lWId3TusOPosyaXyYxP0n/RhT5KdGPytBJy4zl+Y8N/UYl6lQ452yx8w==}
     dev: false
 
-  /lerna@8.0.1:
-    resolution: {integrity: sha512-ZxFMmOqwkP4e+q6BrMzxkAhixi6n0GVD2jAAnAfDkIFnwumB4/7X5/If6fqTlXXshtB2dQtN5OAtzafqVq8cwA==}
+  /lerna@8.1.2:
+    resolution: {integrity: sha512-RCyBAn3XsqqvHbz3TxLfD7ylqzCi1A2UJnFEZmhURgx589vM3qYWQa/uOMeEEf565q6cAdtmulITciX1wgkAtw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
-      '@lerna/create': 8.0.1(typescript@5.3.3)
+      '@lerna/create': 8.1.2(typescript@5.3.3)
       '@npmcli/run-script': 7.0.2
       '@nx/devkit': 17.2.8(nx@17.2.8)
       '@octokit/plugin-enterprise-rest': 6.0.1
